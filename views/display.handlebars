@@ -1,0 +1,11 @@
+<h1>Submitted Form Data</h1>
+{{#if formData.length}}
+    <ul>
+        {{#each formData}}
+            <li>Name: {{this.name}}, Email: {{this.email}}</li>
+        {{/each}}
+    </ul>
+{{else}}
+    <p>No data has been submitted yet.</p>
+{{/if}}
+<a href="/">Back to form</a>
